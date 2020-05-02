@@ -55,7 +55,7 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="{{ route('welcome')}}" class="h2 mb-0">Photo<span class="text-primary">Tech</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="{{ route('welcome')}}" class="h2 mb-0">PhotoTech</a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -77,7 +77,7 @@
                 <li><a href="{{ route('example')}}" class="nav-link">Our Works</a></li>
                 <li><a href="{{ route('service')}}" class="nav-link">Service</a></li>
                 
-                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                
                 <li><a href="{{ route('contact')}}" class="nav-link">Biz bilan bog`lanish</a></li>
               </ul>
             </nav>
