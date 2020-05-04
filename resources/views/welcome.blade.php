@@ -29,7 +29,7 @@
 
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Features</h2>
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Rejalarimiz</h2>
             <p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
           </div>
         </div>
