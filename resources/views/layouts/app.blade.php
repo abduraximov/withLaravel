@@ -101,8 +101,8 @@
               <div class="col-md-9">
                 <div class="row">
                   <div class="col-md-5">
-                    <h2 class="footer-heading mb-4">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                    <h2 class="footer-heading mb-4">License</h2>
+                    <p>"Photo tech" MChJ yaratilagan 2020.01.05 da ............... qaroriga asosan</p>
                   </div>
                   <div class="col-md-3 ml-auto">
                     <h2 class="footer-heading mb-4">Sahifaga O`tish</h2>

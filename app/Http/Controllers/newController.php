@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\post;
+
 class newController extends Controller
 {
     public function welcome() 
     {
-        return view('welcome');
+        $news = post::orderBy('id' , 'desc')->paginate('5');
+        $links = $news->links('');
+        return view('welcome' , compact('news' , 'links'));
     }
 
     public function about()
