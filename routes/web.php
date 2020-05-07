@@ -24,3 +24,5 @@ Route::get('/example', 'newController@example') -> name('example');
 Route::get('/service', 'newController@service') -> name('service');
 
 Route::get('/contact', 'newController@contact') -> name('contact');
+
+Route::get('/more', 'newController@more') -> name('more');

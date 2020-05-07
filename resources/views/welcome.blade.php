@@ -49,37 +49,22 @@
 
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            
+                       
             <div class="owl-carousel slide-one-item-alt-text">
-              <div>
-                <h2 class="section-title mb-3">Minimal and Modern Design</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
+            @foreach($news as $new)  
+            <div>
+                <h2 class="section-title mb-3">{{$new->title}}</h2>
+                <h3>{{$new->shorttitle}}</h3>
+                 <br>
+                 <br>
+                <p><a href="#" class="btn btn-primary mr-2 mb-2">Batafsil</a></p>
               </div>
-              <div>
-                <h2 class="section-title mb-3">Do things with love</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Take your business online</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">4 Our Dedicated Professionals</h2>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
+              @endforeach
+            
+              
+              
             </div>
+            
             
           </div>
         </div>

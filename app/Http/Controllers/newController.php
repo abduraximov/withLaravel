@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\post;
+use App\Post;
 
 class newController extends Controller
 {
     public function welcome() 
     {
-        $news = post::orderBy('id' , 'desc')->paginate('5');
-        $links = $news->links('');
-        return view('welcome' , compact('news' , 'links'));
+         $news = Post::orderBy('id' , 'desc')->paginate('5');
+         $links = $news->links();
+        return view('welcome',compact('news' , 'links'));
     }
 
     public function about()
@@ -42,6 +42,11 @@ class newController extends Controller
     public function contact()
     {
         return view('contact');
+    }
+
+    public function more()
+    {
+        return view('more');
     }
 }
 
