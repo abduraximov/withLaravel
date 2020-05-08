@@ -10,9 +10,9 @@ class newController extends Controller
 {
     public function welcome() 
     {
-         $news = Post::orderBy('id' , 'desc')->paginate('5');
-         $links = $news->links();
-        return view('welcome',compact('news' , 'links'));
+         $posts = post::orderBy('id' , 'desc')->paginate('5');
+         $links = $posts->links();
+        return view('welcome',compact('posts' , 'links'));
     }
 
     public function about()
@@ -44,9 +44,15 @@ class newController extends Controller
         return view('contact');
     }
 
-    public function more()
+    public function more($id)
     {
-        return view('more');
+        $post = Post::findOrFail($id);
+
+        return view('more', [
+            'post'=>$post
+            
+        ]);
+
     }
 }
 

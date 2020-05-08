@@ -51,13 +51,13 @@
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
                        
             <div class="owl-carousel slide-one-item-alt-text">
-            @foreach($news as $new)  
+            @foreach($posts as $post)  
             <div>
-                <h2 class="section-title mb-3">{{$new->title}}</h2>
-                <h3>{{$new->shorttitle}}</h3>
+                <h2 class="section-title mb-3">{{$post->title}}</h2>
+                <h3>{{$post->shorttitle}}</h3>
                  <br>
                  <br>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Batafsil</a></p>
+                <p><a href="{{route('more', $post->id)}}" class="btn btn-primary mr-2 mb-2">Batafsil</a></p>
               </div>
               @endforeach
             

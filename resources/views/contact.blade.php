@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
-              <h2 class="section-title mb-3">Contact Us</h2>
+              <h2 class="section-title mb-3">Bog`lanish</h2>
             </div>
           </div>
           <div class="row mb-5">

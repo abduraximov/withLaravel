@@ -10,8 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//homepage and news and newsmore 
 Route::get('/', 'newController@welcome') -> name('welcome');
+
+Route::get('/more/{id}', 'newController@more') -> name('more');
 
 Route::get('/about', 'newController@about') -> name('about');
 
@@ -24,5 +26,3 @@ Route::get('/example', 'newController@example') -> name('example');
 Route::get('/service', 'newController@service') -> name('service');
 
 Route::get('/contact', 'newController@contact') -> name('contact');
-
-Route::get('/more', 'newController@more') -> name('more');

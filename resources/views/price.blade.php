@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center" data-aos="fade-up">
-              <h2 class="section-title mb-3">Pricing</h2>
+              <h2 class="section-title mb-3">Harid qilmoq</h2>
             </div>
           </div>
           <div class="row mb-5">
@@ -14,7 +14,7 @@
               <div class="pricing">
                 <h3 class="text-center text-black">Basic</h3>
                 <div class="price text-center mb-4 ">
-                  <span><span>$47</span> / year</span>
+                  <span><span>$47</span></span>
                 </div>
                 <ul class="list-unstyled ul-check success mb-5">
                   
@@ -25,7 +25,7 @@
                   <li class="remove">Dolorum esse odio quas architecto sint</li>
                 </ul>
                 <p class="text-center">
-                  <a href="#" class="btn btn-secondary">Buy Now</a>
+                  <a href="#" class="btn btn-secondary">Sotib olmoq</a>
                 </p>
               </div>
             </div>
@@ -34,7 +34,7 @@
               <div class="pricing">
                 <h3 class="text-center text-black">Premium</h3>
                 <div class="price text-center mb-4 ">
-                  <span><span>$200</span> / year</span>
+                  <span><span>$200</span></span>
                 </div>
                 <ul class="list-unstyled ul-check success mb-5">
                   
@@ -45,7 +45,7 @@
                   <li class="remove">Dolorum esse odio quas architecto sint</li>
                 </ul>
                 <p class="text-center">
-                  <a href="#" class="btn btn-primary">Buy Now</a>
+                  <a href="#" class="btn btn-primary">Sotib olmoq</a>
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@
               <div class="pricing">
                 <h3 class="text-center text-black">Professional</h3>
                 <div class="price text-center mb-4 ">
-                  <span><span>$750</span> / year</span>
+                  <span><span>$750</span></span>
                 </div>
                 <ul class="list-unstyled ul-check success mb-5">
                   
@@ -65,7 +65,7 @@
                   <li>Dolorum esse odio quas architecto sint</li>
                 </ul>
                 <p class="text-center">
-                  <a href="#" class="btn btn-secondary">Buy Now</a>
+                  <a href="#" class="btn btn-warning">Sotib olmoq </a>
                 </p>
               </div>
             </div>
