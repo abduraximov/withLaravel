@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
           <div class="mb-4">
-            <h3 class="h3 mb-4 text-black">For the next great business</h3>
+            <h3 class="h3 mb-4 text-black">Qiladigan ishlar</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
             
           </div>

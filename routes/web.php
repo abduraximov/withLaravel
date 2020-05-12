@@ -26,3 +26,8 @@ Route::get('/example', 'newController@example') -> name('example');
 Route::get('/service', 'newController@service') -> name('service');
 
 Route::get('/contact', 'newController@contact') -> name('contact');
+
+//Appointment
+Route::post('appointment', 'newController@makeAppointment') -> name('appointment');
+
+Route::post('/feedback', 'newController@feedbackStore') -> name('contact.store');

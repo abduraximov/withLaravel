@@ -63,21 +63,16 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="{{ route('welcome')}}" class="nav-link">Bosh Sahifa</a></li>
-                <li class="has-children">
+                 <li class="has-children">
                   <a href="{{ route('about')}}" class="nav-link">Biz Haqimizda</a>
                   <ul class="dropdown">
                     <li><a href="{{ route('work')}}" class="nav-link">Bizning Jamoa</a></li>
                     <li><a href="{{ route('price')}}" class="nav-link">Sotib Olmoq</a></li>
-                  
-                    
-                    </li>
-                  </ul>
+                   </li>
+                 </ul>
                 </li>
                 
                 <li><a href="{{ route('example')}}" class="nav-link">Our Works</a></li>
-                <li><a href="{{ route('service')}}" class="nav-link">Service</a></li>
-                
-                
                 <li><a href="{{ route('contact')}}" class="nav-link">Biz bilan bog`lanish</a></li>
               </ul>
             </nav>

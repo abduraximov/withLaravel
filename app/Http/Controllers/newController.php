@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 use App\Post;
 
+use App\Services\SendTelegramService;
+
+use App\Feedback;
+
 class newController extends Controller
 {
     public function welcome() 
@@ -39,10 +43,7 @@ class newController extends Controller
         return view('example');
     }
 
-    public function contact()
-    {
-        return view('contact');
-    }
+    
 
     public function more($id)
     {
@@ -52,7 +53,59 @@ class newController extends Controller
             'post'=>$post
             
         ]);
+        
 
     }
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function feedbackStore(Request $request)
+    {
+       $request->validate([
+
+        'name' => 'required|min:3|max:100',
+        'surname' => 'required|min:3|max:120',
+        'email' => 'required|email',
+        'subject' => 'required|min:10|max:128',
+        'message' => 'required|max:2048'
+       ]);
+       
+       Feedback::create([
+          'name' => $request->post('name'),
+          'surname' => $request->post('surname'),
+          'email' => $request->post('email'),
+          'subject' => $request->post('subject'),
+          'message' => $request->post('message')
+       ]);
+
+       return redirect()
+       ->route('contact')
+       ->with('success', 'xabaringiz yuborildi tez orada javob yozamiz !');
+    }
+
+
+
+
+    public function makeAppointment(Request $request)
+    {
+        $data = $request->validate([
+          'ism' => 'required|min:1',
+          'fam' => 'required|min:1',   
+          'e-mail' => 'required|min:1',
+          'subject' => 'required|min:1',
+          'more' => 'required|min:1'       
+        ]);
+        //formatting
+        $message = 'Ismi: '.$data['ism'].PHP_EOL;
+        $message = 'familyasi: '.$data['fam'];
+       
+        SendTelegramService::send($message);
+
+        return redirect()
+        ->route('contact')
+        ->with('success', 'xabaringiz yuborildi tez orada javob yozamiz !');
+        }
 }
 

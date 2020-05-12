@@ -37,18 +37,32 @@
   
               
   
-              <form action="#" class="p-5 bg-white">
-                
+              <form method="post" action="{{route('contact.store')}}" class="p-5 bg-white">
+               @csrf
                 <h2 class="h4 text-black mb-5">Bog`lanish</h2> 
-  
+                @if(session()->has('success'))
+                  <div class="alert alert-success">
+                      {{ session()->get('success')}}
+                  </div>
+                @endif
+                @if($errors->any())
+                  <div class="alert alert-danger">
+                    <ul>
+                       @foreach($errors->all() as $error)
+                         <li>{{$error}}</li>
+                         @endforeach
+                    </ul>
+                  </div>
+                  @endif
+                 
                 <div class="row form-group">
                   <div class="col-md-6 mb-3 mb-md-0">
                     <label class="text-black" for="fname">Ism</label>
-                    <input type="text" id="fname" class="form-control" placeholder="Ismingiz">
+                    <input type="text" value="{{ old('name')}}" name="name" id="fname" class="form-control" placeholder="Ismingiz">
                   </div>
                   <div class="col-md-6">
                     <label class="text-black" for="lname">Familya</label>
-                    <input type="text" id="lname" class="form-control" placeholder="Familyangiz">
+                    <input type="text" value="{{ old('surname')}}" name="surname" id="lname" class="form-control" placeholder="Familyangiz">
                   </div>
                 </div>
   
@@ -56,7 +70,7 @@
                   
                   <div class="col-md-12">
                     <label class="text-black" for="email">E-mail</label> 
-                    <input type="email" id="email" class="form-control" placeholder="E-mail pochtangiz">
+                    <input type="email" value="{{ old('email')}}" name="email" id="email" class="form-control" placeholder="E-mail pochtangiz">
                   </div>
                 </div>
   
@@ -64,17 +78,17 @@
                   
                   <div class="col-md-12">
                     <label class="text-black" for="subject">Mavzu:</label> 
-                    <input type="subject" id="subject" class="form-control" placeholder="Xabar mavzusi">
+                    <input type="subject" value="{{ old('subject')}}" name="subject" id="subject" class="form-control" placeholder="Xabar mavzusi">
                   </div>
                 </div>
   
                 <div class="row form-group">
                   <div class="col-md-12">
                     <label class="text-black" for="message">Xabar</label> 
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Xabaringiz matni yoki savolingizni yozing..."></textarea>
+                    <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Xabaringiz matni yoki savolingizni yozing...">{{ old('message')}}</textarea>
                   </div>
                 </div>
-  
+    
                 <div class="row form-group">
                   <div class="col-md-12">
                     <input type="submit" value="Xabarni Yubormoq" class="btn btn-outline-success text-black">
