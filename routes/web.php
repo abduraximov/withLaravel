@@ -31,3 +31,11 @@ Route::get('/contact', 'newController@contact') -> name('contact');
 Route::post('appointment', 'newController@makeAppointment') -> name('appointment');
 
 Route::post('/feedback', 'newController@feedbackStore') -> name('contact.store');
+
+//Admin routes
+Route::prefix('admin')->group(function(){
+   
+    Route::resource('posts', 'Admin\\PostsController');
+    
+    
+});
