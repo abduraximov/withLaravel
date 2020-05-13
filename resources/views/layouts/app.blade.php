@@ -74,6 +74,7 @@
                 
                 <li><a href="{{ route('example')}}" class="nav-link">Our Works</a></li>
                 <li><a href="{{ route('contact')}}" class="nav-link">Biz bilan bog`lanish</a></li>
+                
               </ul>
             </nav>
           </div>
