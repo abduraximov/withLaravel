@@ -23,7 +23,7 @@
             <table class="table table-bordered">
                 <thead>
                     <th>Yangiliklar</th>
-                    <th width="100px">Amallar</th>
+                    <th width="180px">Amallar</th>
                 </thead>
             
             <tbody>
@@ -31,12 +31,13 @@
                     <tr>
                         <td>{{ $post->title }}</td>
                         <td>
-                            <a class="btn btn-primary" href="{{ route('posts.show', $post->id) }}">Ko`rish</a>
-                            <a class="btn btn-warning" href="{{ route('posts.edit', ['id' => $post->id])}}">O`zgartirish</a>
-                            <form method="POST" action="{{ route('posts.destroy', ['id' => $post->id]) }}">
+                        <form method="POST" action="{{ route('posts.destroy', ['id' => $post->id]) }}">
+                            
+                            <a class="btn btn-sm btn-primary" href="{{ route('posts.show', $post->id) }}"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-sm btn-warning" href="{{ route('posts.edit', ['id' => $post->id])}}"><i class="fa fa-edit"></i></a>
                             @csrf
                             @method('delete')
-                            <button class="btn btn-danger">O`chirish</button>
+                            <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
 
                             </form>
                         </td>

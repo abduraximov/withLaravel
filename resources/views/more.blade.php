@@ -18,7 +18,7 @@
                   <div class="meta mb-4">
                     <a href="#"><i class="fa fa-eye"></i></a>              
                     <span class="mx-2">&bullet;</span>
-                   //
+                   {{ $post->created_at->format('H:i d/m/Y')}}
                     <span class="mx-2">&bullet;</span>
                     <a href="#">News</a>
                   </div>

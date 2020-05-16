@@ -104,7 +104,7 @@
                     <h2 class="footer-heading mb-4">Sahifaga O`tish</h2>
                     <ul class="list-unstyled">
                       <li><a href="{{ route('about')}}" class="smoothscroll">Biz Haqimizda</a></li>
-                      <li><a href="{{ route('service')}}" class="smoothscroll">Service</a></li>
+              
                       <li><a href="{{ route('contact')}}" class="smoothscroll">Contact Us</a></li>
                     </ul>
                   </div>
@@ -119,9 +119,10 @@
               </div>
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Bizning Yangiliklardan Habardor bo`l !!!</h2>
-                <form action="#" method="post" class="footer-subscribe">
+                <form action="" method="post" class="footer-subscribe">
+                  
                   <div class="input-group mb-3">
-                    <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                    <input type="text" name="email" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
                     </div>

@@ -97,15 +97,18 @@ class newController extends Controller
           'subject' => 'required|min:1',
           'more' => 'required|min:1'       
         ]);
-        //formatting
-        $message = 'Ismi: '.$data['ism'].PHP_EOL;
-        $message = 'familyasi: '.$data['fam'];
-       
-        SendTelegramService::send($message);
 
-        return redirect()
-        ->route('contact')
-        ->with('success', 'xabaringiz yuborildi tez orada javob yozamiz !');
-        }
+        dd($data);
+        //formatting
+        // $message = 'Ismi: '.$data['ism'].PHP_EOL;
+        // $message = 'familyasi: '.$data['fam'];
+       
+        // SendTelegramService::send($message);
+
+        // return redirect()
+        // ->route('contact')
+        // ->with('success', 'xabaringiz yuborildi tez orada javob yozamiz !');
+        
+    }
 }
 

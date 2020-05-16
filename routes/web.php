@@ -34,8 +34,21 @@ Route::post('/feedback', 'newController@feedbackStore') -> name('contact.store')
 
 //Admin routes
 Route::prefix('admin')->group(function(){
+      
+    Route::get('/', function(){
+     return redirect()->route('posts.index');
+    })->name('dashboard');
+
+    
    
     Route::resource('posts', 'Admin\\PostsController');
+//feedback routes    
     
-    
+
+    Route::get('feedbacks' , 'Admin\\FeedbacksController@index') -> name('feedbacks');  
+
+    Route::get('feedbacks{id}/show' , 'Admin\\FeedbacksController@show') -> name('feedbacks.show');  
+
+    Route::delete('feedbacks{id}/delete' , 'Admin\\FeedbacksController@delete') -> name('feedbacks.delete');
+
 });
